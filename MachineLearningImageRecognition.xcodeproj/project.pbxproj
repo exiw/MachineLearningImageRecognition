@@ -13,6 +13,7 @@
 		CDCE1C082C5E48F900F61B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCE1C062C5E48F900F61B67 /* Main.storyboard */; };
 		CDCE1C0A2C5E48FA00F61B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCE1C092C5E48FA00F61B67 /* Assets.xcassets */; };
 		CDCE1C0D2C5E48FA00F61B67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCE1C0B2C5E48FA00F61B67 /* LaunchScreen.storyboard */; };
+		CDCE1C152C5E795E00F61B67 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CDCE1C142C5E795E00F61B67 /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CDCE1C092C5E48FA00F61B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDCE1C0C2C5E48FA00F61B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDCE1C0E2C5E48FA00F61B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCE1C142C5E795E00F61B67 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CDCE1C092C5E48FA00F61B67 /* Assets.xcassets */,
 				CDCE1C0B2C5E48FA00F61B67 /* LaunchScreen.storyboard */,
 				CDCE1C0E2C5E48FA00F61B67 /* Info.plist */,
+				CDCE1C142C5E795E00F61B67 /* MobileNetV2.mlmodel */,
 			);
 			path = MachineLearningImageRecognition;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				CDCE1C052C5E48F900F61B67 /* ViewController.swift in Sources */,
 				CDCE1C012C5E48F900F61B67 /* AppDelegate.swift in Sources */,
+				CDCE1C152C5E795E00F61B67 /* MobileNetV2.mlmodel in Sources */,
 				CDCE1C032C5E48F900F61B67 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
