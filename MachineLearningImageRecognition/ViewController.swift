@@ -51,20 +51,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
             let request = VNCoreMLRequest(model:model) { (vnrequest,error) in
                 if let results = vnrequest.results as? [VNClassificationObservation]{
                     if results.count > 0 {
-                        let topResult = results.first
-                        
-                        
-                        
                         DispatchQueue.main.async {
-                            let confidenceLevel = (topResult?.confidence ?? 0) * 100
-                             
-                            
-                            let rounded = Int(confidenceLevel*100)/100
-                            self.resultLabel.text = "\(rounded) % it's \(topResult!.identifier)"
-                        }
-                    }
-                }
-            }
+                                            
+                                            var resultText = ""
+                                            let topResultsCount = min(3, results.count) 
+                                            for i in 0..<topResultsCount {
+                                                let result = results[i]
+                                                let confidenceLevel = (result.confidence) * 100
+                                                let rounded = Int(confidenceLevel * 100) / 100
+                                                resultText += "\(rounded)% it's \(result.identifier)\n"
+                                            }
+                                            self.resultLabel.text = resultText
+                                        }
+                                    }
+                                }
+                            }
+
                 let handler = VNImageRequestHandler(ciImage: image)
                     DispatchQueue.global(qos: .userInteractive).async {
                      do{

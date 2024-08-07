@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tVV-Mt-FNJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backhand" translatesAutoresizingMaskIntoConstraints="NO" id="tVV-Mt-FNJ">
                                 <rect key="frame" x="46" y="99" width="301" height="356"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="356" id="1h4-fe-ox7"/>
@@ -34,7 +34,7 @@
                                     <action selector="changeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxs-W0-SZy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vef-TG-JWL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vef-TG-JWL">
                                 <rect key="frame" x="55" y="540" width="283" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="hQe-db-kf8"/>
@@ -70,6 +70,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backhand" width="240" height="240"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
